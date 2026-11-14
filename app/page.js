@@ -3,7 +3,9 @@ import Confetti from "./confetti";
 export const revalidate = 60;
 
 export default async function Home() {
-  const response = await fetch("https://www.tabnews.com.br/api/v1/contents?strategy=new&per_page=1");
+  const response = await fetch("https://www.tabnews.com.br/api/v1/contents?strategy=new&per_page=1", {
+    method: "HEAD",
+  });
   const total = Number(response.headers.get("x-pagination-total-rows"));
 
   return (
