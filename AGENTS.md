@@ -12,6 +12,8 @@ Development of the platform Tab News using agentic development.
 - `npm run dev` — start the dev server
 - `npm run build` — production build
 - `npm start` — serve the production build
+- `npm run lint` — lint with ESLint
+- `npm run format` — format with Prettier (`npm run format:check` only checks)
 
 ## Deployment
 
